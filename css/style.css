@@ -34,6 +34,10 @@ h2 {
     font-family: 'gg sans', sans-serif;
 }
 
+hr {
+    color: var(--btn-violet);
+}
+
 .col.col_4_12 {
     padding: 2rem;
 }
