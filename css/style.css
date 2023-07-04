@@ -29,6 +29,8 @@ a {
 
 h2 {
     font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -106,12 +108,6 @@ h2 {
     justify-content: center;
 }
 
-.intro_content div:last-of-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .btn a {
     padding: 1rem 1.5rem;
     border-radius: 25px;
@@ -166,7 +162,7 @@ h2 {
     color: white;
 }
 
-.single_col div.btn {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +173,52 @@ h2 {
 /* #endregion main */
 
 /* #region footer */
+footer, footer a {
+    color: white;
+}
 
+.footer_col h5 {
+    padding: 1rem 0;
+}
+
+footer h2,footer h5 {
+    color: var(--btn-violet);
+}
+
+.footer_col ul {
+    list-style: none;
+}
+
+
+.footer_top {
+    display: flex;
+    padding-top: 4rem;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer_bottom .btn a {
+    background-color: var(--btn-violet);
+    padding: 0.5rem;
+}
+
+.footer_col {
+    padding: 2rem;
+}
+
+.flag {
+    padding-bottom: 2rem;
+}
+
+.social i {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
 
 /* #endregion footer */
 
@@ -198,6 +239,19 @@ h2 {
 .r_180 {
     transform: rotate(180deg);
 }
+
+.flag > img {
+    width: 1.5rem;
+}
+
+.footer_top li, .footer_top h5{
+    font-size: 1rem;
+}
+
+.footer_top li {
+    padding-bottom: 1rem;
+}
+
 
 
 /* #endregion utilities */
@@ -232,48 +286,8 @@ h2 {
     border: 2px dotted black;
 }
 
-
-
-
-.debug .footer_top {
-    display: flex;
-    padding-top: 4rem;
-    background-color: antiquewhite;
-}
-
-.debug .footer_col {
-    min-height: 300px;
-    background-color: rgb(165, 213, 255);
-    border: 2px dotted black;
-    padding: 2rem;
-}
-
-.debug .footer_col h5 {
-    padding: 1rem 0;
-}
-
-.debug .footer_col ul {
-    list-style: none;
-}
-
-.debug .footer_bottom {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    background-color: pink;
-}
-
 .debug .footer_bottom > div {
-    width: 100px;
-    height: 50px;
-    background-color: red;
+    border: 1px dotted;
 }
 
-.debug .placeholder {
-    min-width: 200px;
-    min-height: 50px;
-    background-color: grey;
-    border: 1px solid red;
-}
 /* #endregion debug */
