@@ -35,7 +35,9 @@ h2 {
 :root {
     --head: rgb(49, 97, 224);
     --btn-dark: rgb(35, 39, 42);
+    --btn-violet: rgb(142, 161, 225);
     --bg-wave: rgb(246, 246, 246);
+
 } 
 
 /* #endregion common */
@@ -110,7 +112,7 @@ h2 {
     align-items: center;
 }
 
-.intro_content a {
+.btn a {
     padding: 1rem 1.5rem;
     border-radius: 25px;
     margin: 0 1rem;
@@ -156,7 +158,20 @@ h2 {
 
 .row.block {
     display: block;
+    text-align: center;
 }
+
+.single_col .btn a {
+    background-color: var(--btn-violet);
+    color: white;
+}
+
+.single_col div.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* #endregion sections */
 
 /* #endregion main */
@@ -215,28 +230,6 @@ h2 {
 
 .debug .row > .col {
     border: 2px dotted black;
-}
-
-
-.debug .single_col > div {
-    border: 2px dotted black;
-    min-height: 100px;
-    min-width: 400px;
-    background-color: green;
-}
-
-.debug .single_col div:last-of-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.debug .single_col  button {
-    width: 250px;
-    height: 50px;
-    background-color: aqua;
-    border-radius: 25px;
-    border: none;
 }
 
 
