@@ -141,6 +141,22 @@ h2 {
     background-color: var(--bg-wave);
 }
 
+.wave {
+    display: block;
+    filter: invert(100%) sepia(91%) saturate(1114%) hue-rotate(191deg) brightness(125%) contrast(93%);
+}
+
+.section_container {
+    padding: 3rem 0;
+ }
+
+.row {
+    display: flex;
+}
+
+.row.block {
+    display: block;
+}
 /* #endregion sections */
 
 /* #endregion main */
@@ -164,6 +180,10 @@ h2 {
     width: calc(100% / 12 * 4);
 }
 
+.r_180 {
+    transform: rotate(180deg);
+}
+
 
 /* #endregion utilities */
 
@@ -185,52 +205,18 @@ h2 {
 }
 
 
-
-
-
-
 .debug .even {
-    min-height: 400px;
-    
     border: 2px dotted black;
-}
-
-.debug .even img {
-    color: var(--bg-wave);
 }
 
 .debug .odd {
-    min-height: 400px;
-    
     border: 2px dotted black;
-}
-
-.debug .section_container {
-    min-height: 400px;
-    padding: 50px 0;
-    background-color: rgba(255, 166, 0, 0.241);
- }
-
-.debug .row {
-    min-height: 300px;
-    background-color: rgb(165, 213, 255);
-    display: flex;
-    padding: 1rem;
 }
 
 .debug .row > .col {
-    min-height: 250px;
     border: 2px dotted black;
-    background-color: green;
 }
 
-.debug .row > .col.col_8_12 {
-    width: calc(100% / 12 * 8);
-}
-
-.debug .row > .col.col_4_12 {
-    width: calc(100% / 12 * 4);
-}
 
 .debug .single_col > div {
     border: 2px dotted black;
@@ -253,9 +239,6 @@ h2 {
     border: none;
 }
 
-.debug .row.block {
-    display: block;
-}
 
 
 
