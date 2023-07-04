@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-family: 'gg sans SemiBold', sans-serif;
+}
 header {
     background-color: rgb(49, 97, 224);
 }
@@ -24,9 +26,16 @@ a {
     text-decoration: none;
 }
 
+
+h2 {
+    font-size: 2.5rem;
+}
+
+
 :root {
     --head: rgb(49, 97, 224);
     --btn-dark: rgb(35, 39, 42);
+    --bg-wave: rgb(246, 246, 246);
 } 
 
 /* #endregion common */
@@ -76,6 +85,8 @@ a {
     border-radius: 1.5rem;
 }
 
+/* #endregion header */
+
 /* #region introduction */
 .introduction {
     background-image: url("./../img/jumbo.png");
@@ -91,10 +102,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.intro_content h2 {
-    font-size: 2.5rem;
 }
 
 .intro_content div:last-of-type {
@@ -126,12 +133,13 @@ a {
 
 /* #endregion introduction */
 
-/* #endregion header */
-
 /* #region main */
 
 /* #region sections */
 
+.even {
+    background-color: var(--bg-wave);
+}
 
 /* #endregion sections */
 
@@ -183,11 +191,18 @@ a {
 
 .debug .even {
     min-height: 400px;
-    background-color: lightgray;
+    
+    border: 2px dotted black;
+}
+
+.debug .even img {
+    color: var(--bg-wave);
 }
 
 .debug .odd {
     min-height: 400px;
+    
+    border: 2px dotted black;
 }
 
 .debug .section_container {
