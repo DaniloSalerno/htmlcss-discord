@@ -33,6 +33,9 @@ h2 {
     padding-bottom: 2rem;
 }
 
+.col.col_4_12 {
+    padding: 2rem;
+}
 
 :root {
     --head: rgb(49, 97, 224);
@@ -252,7 +255,13 @@ footer h2,footer h5 {
     padding-bottom: 1rem;
 }
 
-
+.stars {
+    background-image: url(./../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 6rem;
+    font-size: 1.8rem;
+}
 
 /* #endregion utilities */
 
