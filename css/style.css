@@ -9,7 +9,7 @@ header {
     background-color: rgb(49, 97, 224);
 }
 
-.header_nav, .section_container,.footer_container, .intro_content {
+.header_nav, .section_container,.footer_container {
     width: 80%;
     max-width: 1170px;
     margin: auto;
@@ -26,6 +26,7 @@ a {
 
 :root {
     --head: rgb(49, 97, 224);
+    --btn-dark: rgb(35, 39, 42);
 } 
 
 /* #endregion common */
@@ -78,13 +79,49 @@ a {
 /* #region introduction */
 .introduction {
     background-image: url("./../img/jumbo.png");
+    background-size: cover;
 }
 
+.intro_content {
+    width: 50%;
+    min-height: 500px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_content h2 {
+    font-size: 2.5rem;
+}
 
 .intro_content div:last-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.intro_content a {
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    margin: 0 1rem;
+}
+
+.intro_content .btn > a:first-of-type {
+    background-color: white;
+    color: black;
+}
+
+.intro_content .btn > a:last-of-type {
+    background-color: var(--btn-dark);
+    color: white;
+}
+
+
+.intro_content > div {
+    padding: 1rem;
 }
 
 /* #endregion introduction */
@@ -131,33 +168,12 @@ a {
 
 /* #region debug */
   
-.debug .header_nav div {
-    background-color: red;
-}
-
-
 .debug .intro_content {
-    min-height: 500px;
     border: 2px dotted black;
-
 }
-
-
 
 .debug .intro_content > div {
-    min-height: 80px;
-    background-color: gray;
     border: 2px dashed black;
-}
-
-.debug .intro_content a {
-    width: 250px;
-    height: 50px;
-    background-color: aqua;
-    border-radius: 25px;
-    margin: 0 1rem;
-    border: none;
-
 }
 
 
